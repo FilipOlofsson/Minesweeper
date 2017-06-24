@@ -43,7 +43,7 @@ public class GUI extends Canvas {
 
                                 if(!Grid[x][y].bomb) {
                                     g2d.setFont(new Font("Arial", Font.BOLD, 15));
-                                    String toPrint = Grid[x][y].surrounding + "";
+                                    String toPrint = Grid[x][y].nearby() + "";
 
                                     int fx = (Grid[x][y].x * cellWidth + cellWidth + Grid[x][y].x * cellWidth)/2 - fm.stringWidth(toPrint)/2;
                                     int fy = (Grid[x][y].y * cellWidth + cellWidth + Grid[x][y].y * cellWidth) / 2 + fm.getHeight()/3;
